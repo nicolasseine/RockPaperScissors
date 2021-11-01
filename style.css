@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.player_selection {
+    background-color: beige;
+    padding: 60px;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.game_lost {
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+}
+
+.game_won {
+    background-color: darkgreen;
+    color: white;
+    font-size: 2rem;
+}
