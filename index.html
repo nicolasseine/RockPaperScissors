@@ -34,9 +34,10 @@
                 return move;
             }
 
+
             function getScore() {
                 let score;
-                switch (playerSelection) {
+                switch (playerSelection) { //possible to do it easier
                     case "rock":
                         if (computerSelection === "rock") score = 0;
                         else if (computerSelection === "paper") score = -1;
