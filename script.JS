@@ -92,13 +92,17 @@ function displayScore() {
     - You have   ${playerScore} ${(playerScore < 2) ? "point": "points"}`
 }
 
+mainDiv = document.querySelector(".player_selection");
+
 function endGame() {
     if (computerScore === 5) {
         currentScore.classList.add("game_lost");
-        currentScore.textContent = `Game over ! You lost ${computerScore} to ${playerScore}`;
+        currentScore.textContent = ` You lost ${computerScore} to ${playerScore}`;
+        mainDiv.innerHTML = "<h1>GAME OVER</h1>";
 
     } else if (playerScore === 5) {
         currentScore.classList.add("game_won");
         currentScore.textContent = `You won ${playerScore} to ${computerScore}`;
+        mainDiv.innerHTML = "<h1>GAME OVER</h1>";
     }
 }
