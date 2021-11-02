@@ -8,7 +8,7 @@ const buttons = Array.from(document.getElementsByClassName("choice_button"));
 console.log(buttons);
 buttons.forEach(button => {
     button.addEventListener('click', event => {
-        playRound(event.target.id) // Id are "rock", "paper", "scissors"
+        playRound(event.target.id) // Ids are "rock", "paper", "scissors"
     })
 
 
